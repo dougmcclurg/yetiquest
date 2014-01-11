@@ -1,0 +1,23 @@
+<h1>Listing adventurers</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @adventurers.each do |adventurer| %>
+  <tr>
+    <td><%= adventurer.name %></td>
+    <td><%= link_to 'Show', adventurer %></td>
+    <td><%= link_to 'Edit', edit_adventurer_path(adventurer) %></td>
+    <td><%= link_to 'Destroy', adventurer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Adventurer', new_adventurer_path %>
