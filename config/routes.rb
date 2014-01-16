@@ -1,4 +1,7 @@
 Adventure::Application.routes.draw do
+
+  get     '/',                                :to => 'home_page#index',                      :as => 'home_page'
+
   resources :adventurers
 
 

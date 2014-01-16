@@ -15,5 +15,10 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+gem 'angularjs-rails', '~> 1.2.7'
+gem 'semantic-ui-sass', '~> 0.12.0.0'
+# gem 'jquery-rails'
 
+group :test, :development do
+  gem 'teaspoon'
+end

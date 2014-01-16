@@ -1,0 +1,12 @@
+<h1>Yeti Questers</h1>
+<div class="ui selection list">
+  <div class="item" ng-repeat="adventurer in adventurers">
+    <img class="ui avatar image" src="assets/demo/avatar.jpg">
+    <div class="content" ng-click="viewAdventurer(adventurer.id)">
+      <div class="header">{{ adventurer.name }}</div>
+      {{ adventurer.tagline }}
+    </div>
+  </div>
+</div>
+
+<a href="/#" class="large ui button"><i class="long arrow left icon "></i>home</a>
